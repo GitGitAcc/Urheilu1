@@ -1,5 +1,6 @@
 
 class henkilo {
+    //henkilö luokka
     constructor(etuN, sukuN, kutsumaN, syntymaAika){
         this.etuN = etuN;
         this.sukuN = sukuN;
@@ -10,12 +11,15 @@ class henkilo {
 }
 
 class urheilija extends henkilo {
+    //uhreilija luokka
     constructor(etuN, sukuN, kutsumaN, syntymaAika, linkkiKuvaan, omapaino, laji, saavutukset) {
         super(etuN, sukuN, kutsumaN, syntymaAika);
         this.omapaino = omapaino;
         this.laji = laji;
         this.saavutukset = saavutukset;
     }
+
+    //getterit ja setterit urlheilija luokalle
     getLinkkiKuvaan() {
         return this.linkkiKuvaan;
     }
